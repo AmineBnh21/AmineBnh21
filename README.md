@@ -1,4 +1,4 @@
-<h1 align="center">Bonjour, je suis Mohamed Amine BENHAMAID 👋</h1>
+<h1 align="center">Salut, je suis Mohamed Amine BENHAMAID </h1>
 
 <p align="center">
   <b>Étudiant en Master 2 Intelligence Artificielle — Université Claude Bernard Lyon 1</b><br>
@@ -13,18 +13,18 @@
 
 ---
 
-## 🧠 À propos
+##  À propos
 
-- 🎓 M2 Intelligence Artificielle à Lyon 1, après un M1 Informatique et une Licence Informatique (Skikda, Algérie)
-- 🔬 Expérience du cycle complet d'un projet de données : préparation, modélisation ML/DL, **évaluation rigoureuse**
-- 🕸️ Centres d'intérêt : **Graph Neural Networks**, **IA générative / RAG**, sécurité des LLM, systèmes multi-agents
-- 🗣️ Français courant · Anglais B2 (technique)
+-  M2 Intelligence Artificielle à Lyon 1, après un M1 Informatique et une Licence Informatique (Skikda, Algérie)
+-  Expérience du cycle complet d'un projet de données : préparation, modélisation ML/DL, **évaluation rigoureuse**
+-  Centres d'intérêt : **Graph Neural Networks**, **IA générative / RAG**, sécurité des LLM, systèmes multi-agents
+-  Français courant · Anglais B2 (technique)
 
 ---
 
-## 🚀 Projets phares
+##  Projets phares
 
-### 📜 [Assistant de conformité à l'AI Act européen (RAG)](https://github.com/AmineBnh21/RAG-AI-Act)
+###  [Assistant de conformité à l'AI Act européen (RAG)](https://github.com/AmineBnh21/RAG-AI-Act)
 `Python` `LLM` `ChromaDB` `bge-m3` `Ministral 8B` `Pydantic`
 
 À partir de la description d'un système d'IA, l'assistant détermine son **niveau de risque**, le **rôle de l'opérateur** et ses **obligations datées**, en citant les articles exacts du règlement.
@@ -33,7 +33,7 @@
 - Comparaison de deux stratégies de découpage : recall@8 **70 % vs 91 %**
 - Défenses contre le **prompt injection** (filtre d'entrée, délimitation des données, validation des citations en code) : 8 attaques sur 10 neutralisées contre 5 sans défenses, **100 % des citations vérifiées**
 
-### ₿ [Détection de fraude Bitcoin par Graph Neural Networks](https://github.com/AmineBnh21/FRAUDE-DETECTION)
+###  [Détection de fraude Bitcoin par Graph Neural Networks](https://github.com/AmineBnh21/FRAUDE-DETECTION)
 `PyTorch Geometric` `scikit-learn` `GCN` `GraphSAGE` `GAT`
 
 Classification de **203 000+ transactions Bitcoin** (234 000 flux, dataset Elliptic) en licites / illicites.
@@ -41,21 +41,21 @@ Classification de **203 000+ transactions Bitcoin** (234 000 flux, dataset Ellip
 - Embeddings GraphSAGE + Random Forest : précision portée à **0,97**, fausses alertes **divisées par 3** (55 → 19) à F1 égal
 - Résultats cohérents avec Weber et al. (2019) : RF 0,81 vs 0,64 pour le meilleur GNN seul
 
-### ✈️ [British Airways — Data Science Job Simulation](https://github.com/AmineBnh21/British_Airways_Project)
+###  [British Airways — Data Science Job Simulation](https://github.com/AmineBnh21/British_Airways_Project)
 `CatBoost` `Optuna` `SHAP` `pandas`
 
 - Prédiction de la finalisation de **50 000 demandes de réservation** (15 % de positifs) : ROC-AUC **0,795**, PR-AUC **0,372** (hasard : 0,15) sur un test jamais vu ; **lift ×2,5** (50 % des réservations captées en ciblant 20 % des clients)
 - **Fuite de données détectée et corrigée** (un encodage naïf gonflait l'AUC à 0,81) via un target encoding en cross-fitting ; variable originale « rôle du voyageur », interprétation SHAP
 - Estimation de l'éligibilité aux salons de Heathrow sur 10 000 vols (table réutilisable type de route × région)
 
-### 🚗 Négociation automatique multi-agents — stage de recherche (Lyon 1)
+###  Négociation automatique multi-agents — stage de recherche (Lyon 1)
 `Python` `asyncio` `NumPy` `pandas` `Matplotlib`
 
 Modélisation du stationnement urbain comme un système multi-agents où véhicules et parkings négocient place et tarif : utilité multicritère côté conducteur, tarification dynamique côté parking, simulation distribuée et asynchrone avec suivi de l'occupation en temps réel.
 
 ---
 
-## 🛠️ Stack technique
+##  Stack technique
 
 **Machine Learning / Deep Learning**<br>
 <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white">
@@ -92,7 +92,7 @@ Modélisation du stationnement urbain comme un système multi-agents où véhicu
 
 ---
 
-## 📜 Certifications
+##  Certifications
 
 - Forage — Tata Group Data Analytics Job Simulation
 - Kaggle — Intermediate Machine Learning
@@ -105,4 +105,4 @@ Modélisation du stationnement urbain comme un système multi-agents où véhicu
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AmineBnh21&layout=compact&hide_border=true" height="160">
 </p>
 
-<p align="center"><i>📫 Ouvert aux opportunités de stage en Data Science / IA — n'hésitez pas à me contacter !</i></p>
+<p align="center"><i> Ouvert aux opportunités de stage en Data Science / IA — n'hésitez pas à me contacter !</i></p>
