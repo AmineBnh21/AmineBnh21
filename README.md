@@ -2,7 +2,7 @@
 
 <p align="center">
   <b>Étudiant en Master 2 Intelligence Artificielle — Université Claude Bernard Lyon 1</b><br>
-  Je recherche un <b>stage Data Science / IA de 6 mois à partir de février 2027</b> (Lyon ou remote)
+  Je recherche un <b>stage Data Science / IA de 6 mois à partir de février 2027</b>
 </p>
 
 <p align="center">
