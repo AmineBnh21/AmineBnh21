@@ -1,4 +1,4 @@
-<h1 align="center">Salut, je suis Mohamed Amine BENHAMAID </h1>
+<h1 align="center">Salut,je suis Mohamed Amine BENHAMAID </h1>
 
 <p align="center">
   <b>Étudiant en Master 2 Intelligence Artificielle — Université Claude Bernard Lyon 1</b><br>
