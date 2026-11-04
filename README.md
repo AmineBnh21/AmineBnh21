@@ -17,7 +17,7 @@
 
 -  M2 Intelligence Artificielle à Lyon 1, après un M1 Informatique et une Licence Informatique (Skikda, Algérie)
 -  Expérience du cycle complet d'un projet de données : préparation, modélisation ML/DL, **évaluation rigoureuse**
--  Centres d'intérêt : **Graph Neural Networks**, **IA générative / RAG**, sécurité des LLM, systèmes multi-agents
+-  Centres d'intérêt : **Graph Neural Networks**, **IA générative / RAG**, sécurité des LLM, **LLM vision appliqués à l'accessibilité web**, systèmes multi-agents
 -  Français courant · Anglais B2 (technique)
 
 ---
@@ -32,6 +32,15 @@
 - Recherche augmentée garantissant un candidat par niveau de risque : exactitude **64 % → 92 %** sur 25 cas annotés (recall des extraits 70 % → 100 %)
 - Comparaison de deux stratégies de découpage : recall@8 **70 % vs 91 %**
 - Défenses contre le **prompt injection** (filtre d'entrée, délimitation des données, validation des citations en code) : 8 attaques sur 10 neutralisées contre 5 sans défenses, **100 % des citations vérifiées**
+
+###  [Audit d'accessibilité RGAA par règles + LLM vision](https://github.com/AmineBnh21/rgaa-audit-ia)
+`Python` `Playwright` `Beautiful Soup` `LLM vision` `Pydantic` `GitHub Actions` `Docker`
+
+Outil en ligne de commande qui charge une page dans un vrai navigateur et l'audite selon le **RGAA 4.1** : critères objectifs (images 1.1, contraste 3.2, titres 9.1) par **règles déterministes**, pertinence des alternatives textuelles (1.3) par **LLM vision**, avec un rapport JSON / Markdown où **chaque verdict est justifié**.
+- Hybride règles / LLM argumenté : **264 vérifications en ~2 s sans coût** contre ~2 à 8 s **par image** pour le LLM, d'où plafond d'appels, mode `--no-llm` et seuil de confiance (< 0,6 → « à vérifier » plutôt qu'un faux verdict)
+- Le LLM reçoit la **capture de l'image telle qu'affichée**, son alt et son contexte, et répond en **JSON strict validé par Pydantic** ; client **multi-fournisseur** (Gemini, OpenAI, Anthropic, Ollama en local)
+- Explicabilité imposée par le modèle de données : aucun résultat sans justification ; les échecs techniques (quota, JSON invalide) donnent « à vérifier », jamais un verdict inventé
+- **CI/CD GitHub Actions** : Ruff, pytest sous Python 3.11 / 3.12 sans appel LLM réel, smoke test, image **Docker** publiée sur GHCR, release automatique
 
 ###  [Détection de fraude Bitcoin par Graph Neural Networks](https://github.com/AmineBnh21/FRAUDE-DETECTION)
 `PyTorch Geometric` `scikit-learn` `GCN` `GraphSAGE` `GAT`
@@ -69,10 +78,18 @@ Modélisation du stationnement urbain comme un système multi-agents où véhicu
 
 **IA générative / NLP**<br>
 <img src="https://img.shields.io/badge/LLM-412991?style=flat-square">
+<img src="https://img.shields.io/badge/LLM%20vision-8E75B2?style=flat-square&logo=googlegemini&logoColor=white">
 <img src="https://img.shields.io/badge/RAG-6E40C9?style=flat-square">
 <img src="https://img.shields.io/badge/ChromaDB-FF6F61?style=flat-square">
 <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat-square&logo=huggingface&logoColor=black">
+<img src="https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white">
 <img src="https://img.shields.io/badge/Pydantic-E92063?style=flat-square&logo=pydantic&logoColor=white">
+
+**Web & accessibilité**<br>
+<img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white">
+<img src="https://img.shields.io/badge/Beautiful%20Soup-4B8BBE?style=flat-square">
+<img src="https://img.shields.io/badge/RGAA-4.1-000091?style=flat-square">
+<img src="https://img.shields.io/badge/WCAG-2.1-005A9C?style=flat-square">
 
 **Langages & outils**<br>
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
@@ -82,13 +99,15 @@ Modélisation du stationnement urbain comme un système multi-agents où véhicu
 <img src="https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white">
 <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white">
 <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white">
+<img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white">
 <img src="https://img.shields.io/badge/GitLab%20CI-FC6D26?style=flat-square&logo=gitlab&logoColor=white">
 <img src="https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white">
+<img src="https://img.shields.io/badge/Ruff-D7FF64?style=flat-square&logo=ruff&logoColor=black">
 <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white">
 <img src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white">
 <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black">
 
-**Techniques** : GNN (GCN, GraphSAGE, GAT) · classification déséquilibrée · feature engineering · validation croisée stratifiée · prévention de la fuite de données · interprétabilité (SHAP) · évaluation de RAG · sécurité des LLM · systèmes multi-agents
+**Techniques** : GNN (GCN, GraphSAGE, GAT) · classification déséquilibrée · feature engineering · validation croisée stratifiée · prévention de la fuite de données · interprétabilité (SHAP) · évaluation de RAG · sécurité des LLM · LLM vision et sorties structurées · audit d'accessibilité (RGAA / WCAG) · CI/CD · systèmes multi-agents
 
 ---
 
